@@ -16,14 +16,20 @@ body {
 }
 
 p {
+	display: block;
+	line-height: 1.6em;
 	font-size: 1.2em;
 	font-weight: 400;
 }
 
+ul li a {
+	display: block; 
+    padding: 10px; 
+}
+
+
 a {
-	display: block; /* Make the link a block-level element to fill the container */
-    padding: 10px; /* Add padding to create a clickable area */
-    color: #333; /* Default color */
+    color: #333;
     text-decoration: none;
 }
 

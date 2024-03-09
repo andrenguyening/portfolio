@@ -4,4 +4,59 @@
   
 <main>
     <Navbar />
+    <div class = "container">
+        <h2>About <span id ="me">Me.</span></h2>
+            <p>
+                I am senior at the University of Pittsburgh (Pitt) currently studying Computer Science! I initally enrolled as a bioengineering major at the Swanson School of Engineering at the beginning of 2020. 
+                After taking my first programming course as an engineer, I wanted to continue developing and hopefully one day create programs that are more visually appealing than seeing text on the CLI. 
+                I had always been the "tech support" person in my household, so I had always enjoyed learning about the different workings of a computer. The following semester, 
+                I transferred to the School of Computing and Information and enrolled in the Computer Science program. I always enjoy learning new technologies and figuring out how I can use them in new projects. 
+                I am most proficient in Python, Java, Javascript, and SQL!
+                <br><br>
+
+                <br><br>
+                In the summer of 2023, I interned at SEI Investments as a Software Developer Intern on their SEI Wealth Platform team. During my time here, I had the opportunity to present how SEI could 
+                utilize AI tools such as GPT 3.5 and Copilot to enhance developer and back office role efficiency. My project here was to help develop test suites using a end-to-end testing framework called
+                Playwright utilizing Typescript. Through this, I was able to learn about the components of our web application by collaborating with developers on creating new features using Angular and Java.
+                If you would like to learn more about the impact of my work at SEI, you can read more <a id = "technically" href="https://technical.ly/software-development/sei-cto-zachary-womack-ai/"> here </a>or on my resume!
+                <br><br>
+            </p>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h3 class="card-title">Budget App</h3>
+                  <p>Manage your budget! Created using React, Python, Flask</p>
+                </div>
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+            </div>
+
+    </div>
 </main>
+
+<style>
+    a{
+        display: inline;
+    }
+    #me{
+        color:rgb(89, 128, 255);
+    }
+    #technically{
+        color:blue
+    }
+    p{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 3em;
+    }
+    .container{
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        /* background-color: red; */
+        padding: 3%;
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        height:1000px;
+    }
+</style>
