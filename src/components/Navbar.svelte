@@ -48,7 +48,7 @@
         padding-left: 7px;
     }
     .typing {
-        /* font-family: "Roboto", sans-serif; */
+      /* font-family: "Roboto", sans-serif; */
       padding-left: 30px;
       width: 14ch;
       animation: typing 2s steps(13), blink .5s step-end 2s infinite alternate;
