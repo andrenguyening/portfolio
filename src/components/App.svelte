@@ -1,5 +1,5 @@
 <head>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -19,7 +19,7 @@
 			<a href="mailto:andre.l.nguyen@outlook.com"><i class="fa-solid fa-envelope"></i></a>
 		</div>
 	</div>
-	<img id="pp" src = "public\images\image2.jpg" alt = "">
+	
 
 
 </main>
@@ -32,11 +32,7 @@
 
 /*		ids		*/
 #pp{
-	float: right;
-	margin-right: 23%;
-	margin-top: -36%;
-    height: auto; 
-    width: auto; 
+	transform: translateX(160%);
     max-width: 550px; 
     max-height: 550px;
 	clip-path: circle();
@@ -63,7 +59,6 @@
 	justify-content: center;
 	height: 100vh;
 	margin-left: 20%;
-	/* background-color:blue; */
 	width:800px
 }
 

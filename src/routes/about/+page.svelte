@@ -22,8 +22,8 @@
                 <br><br>
             </p>
             <div class="card w-96 bg-base-100 shadow-xl">
-                <div class="card-body">
-                  <h3 class="card-title">Budget App</h3>
+                <div class="card-body" style="background-color:white ">
+                  <h3 class="card-title" >Budget App</h3>
                   <p>Manage your budget! Created using React, Python, Flask</p>
                 </div>
                 <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
