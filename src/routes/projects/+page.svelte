@@ -1,40 +1,26 @@
 <script>
     import Navbar from '../../components/Navbar.svelte';
+    import { fly } from 'svelte/transition';
+    import Card from '../../components/Card.svelte';
+    function toggleVisibility(card) {
+        card.visible = !card.visible;
+    }
+  let cards = [
+    { id: 1, cardtitle: 'Card 1', desc: 'Content for Card 1' ,imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"},
+    { id: 2, cardtitle: 'Card 2', desc: 'Content for Card 2',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" },
+    { id: 3, cardtitle: 'Card 3', desc: 'Content for Card 2',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" },
+    { id: 4, cardtitle: 'Card 4', desc: 'Content for Card 2',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" },
+    // Add more cards as needed
+  ];
 </script>
 <Navbar />
 <div class= "container">
     <h1 id= "title">Projects I've Worked On</h1>
-    <br>    <br>
-    <br>
-    <div class = "card-container">
-        <div class="card w-96 bg-base-100 shadow-xl">
-            <div class="card-body" style="background-color:white ">
-            <h3 class="card-title" >Budgify</h3>
-            <p>Manage your budget! Created using Javascript, React, Python, and Flask</p>
-            </div>
-            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-        </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
-            <div class="card-body" style="background-color:white ">
-            <h3 class="card-title" >Chat App</h3>
-            <p>Come chat! Created with using Javascript, Python, Flask, and AJAX</p>
-            </div>
-            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-        </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
-            <div class="card-body" style="background-color:white ">
-            <h3 class="card-title" >Budgify</h3>
-            <p>Manage your budget! Created using React, Python, Flask</p>
-            </div>
-            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-        </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
-            <div class="card-body" style="background-color:white ">
-            <h3 class="card-title" >Budgify</h3>
-            <p>Manage your budget! Created using Javascript, React, Python, and Flask</p>
-            </div>
-            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-        </div>
+    <br><br><br>
+    <div class = "card-container" >
+        {#each cards as card (card.id)}
+            <Card cardtitle= {card.cardtitle} desc={card.desc} imagesrc = {card.imagesrc}/>
+        {/each}
     </div>
 </div>
 
@@ -68,23 +54,23 @@
     }
     .card-container{
         /* background-color: red; */
-        /* margin-left: auto;
-        margin-right: auto; */
-        place-content:center;
-        place-items: center;
-        max-width: fit-content;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
-        position: relative;
+        align-items: flex-start;
         width: 100%;
-        height:1000px;
+        height:800px;
     }
-    .card{
-        display: inline-block;
-        /* padding: 15px; */
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 30px;
-        margin-top: 30px;
+
+    .hidden{
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
     }
 </style>

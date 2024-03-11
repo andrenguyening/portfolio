@@ -15,8 +15,7 @@
 		  <li><a href="/"><i class="fa-solid fa-house" id = "house"></i><span class= "iconlabel">Home</span></a></li>
 		  <li><a href="/about"><i class="fa-solid fa-user"></i><span class= "iconlabel">About</span></a></li>
 		  <li><a href="/projects"><i class="fa-solid fa-code"></i><span class= "iconlabel">Projects</span></a></li>
-		  <li><a href="#">Resume</a></li>
-		  <li><a href="#">Blog</a></li>
+		  <li><a href="https://drive.google.com/file/d/1QmQlTtdfx9uxaN1aG5E8cTWa5n13Zf74/view?usp=sharing">Resume</a></li>
 		  <li><a href="#">Contact</a></li>
 		</ul>
 	</div>
