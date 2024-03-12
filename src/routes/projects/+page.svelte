@@ -1,25 +1,40 @@
 <script>
     import Navbar from '../../components/Navbar.svelte';
-    import { fly } from 'svelte/transition';
     import Card from '../../components/Card.svelte';
-    function toggleVisibility(card) {
-        card.visible = !card.visible;
-    }
-  let cards = [
-    { id: 1, cardtitle: 'Card 1', desc: 'Content for Card 1' ,imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"},
-    { id: 2, cardtitle: 'Card 2', desc: 'Content for Card 2',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" },
-    { id: 3, cardtitle: 'Card 3', desc: 'Content for Card 2',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" },
-    { id: 4, cardtitle: 'Card 4', desc: 'Content for Card 2',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" },
-    // Add more cards as needed
-  ];
+
+    let portfolio = ["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+    ];
+    
+    let budget = ["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"];
+
+    let chat = ["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
+    ];
+
+    let cards = [
+        { id: 1, cardtitle: 'Portfolio Website', desc: 'Personal website to introduce myself! Check me out!' ,imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg", strings: portfolio},
+        { id: 2, cardtitle: 'Budgify', desc: 'A budget tracking app using a custom RESTful API!',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" ,strings: budget},
+        { id: 3, cardtitle: 'Conversate', desc: 'Chatroom app with live chatting utilizing AJAX polling and updating!',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg", strings:chat },
+        { id: 4, cardtitle: 'Card 4', desc: 'Content for Card 2',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"},
+        // Add more cards as needed
+    ];
+
+
 </script>
 <Navbar />
 <div class= "container">
     <h1 id= "title">Projects I've Worked On</h1>
     <br><br><br>
     <div class = "card-container" >
-        {#each cards as card (card.id)}
-            <Card cardtitle= {card.cardtitle} desc={card.desc} imagesrc = {card.imagesrc}/>
+        {#each cards as card (card.id)} 
+            <Card cardtitle= {card.cardtitle} desc={card.desc} imagesrc = {card.imagesrc} strings={card.strings}/>
         {/each}
     </div>
 </div>
