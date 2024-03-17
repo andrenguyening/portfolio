@@ -3,9 +3,11 @@
     export let desc;
     export let imagesrc;
     export let strings = [];
+    export let link;
 </script>
 
 <div class="card w-96 bg-base-100 shadow-xl">
+    <a href={link}>
     <div class="card-body">
         <h3 class="card-title" >{cardtitle}</h3>
         <p>{desc}</p>
@@ -17,8 +19,10 @@
             {/each}
         </div>
     </div>
+    </a>
     <figure><img src={imagesrc} alt="" /></figure>
 </div>
+
 
 <style>
     .imagespacing{

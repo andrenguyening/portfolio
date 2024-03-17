@@ -7,6 +7,7 @@
     <br>
     <div class = "container">
         <h2>About <span id ="me">Me.</span></h2>
+        <br>
             <p>
                 I am senior at the University of Pittsburgh (Pitt) currently studying Computer Science! I initally enrolled as a bioengineering major at the Swanson School of Engineering at the beginning of 2020. 
                 After taking my first programming course as an engineer, I wanted to continue developing and hopefully one day create programs that are more visually appealing than seeing text on the CLI. 

@@ -16,7 +16,7 @@
 		  <li><a href="/about"><i class="fa-solid fa-user"></i><span class= "iconlabel">About</span></a></li>
 		  <li><a href="/projects"><i class="fa-solid fa-code"></i><span class= "iconlabel">Projects</span></a></li>
 		  <li><a href="https://drive.google.com/file/d/1QmQlTtdfx9uxaN1aG5E8cTWa5n13Zf74/view?usp=sharing">Resume</a></li>
-		  <li><a href="#">Contact</a></li>
+		  <li><a href="/contact">Contact</a></li>
 		</ul>
 	</div>
   </nav>
@@ -38,10 +38,13 @@
         list-style: none;
         display: flex;
     }
-    
+
     li {
         margin-right: 15px;
+        
     }
+
+
     
     .iconlabel{
         padding-left: 7px;

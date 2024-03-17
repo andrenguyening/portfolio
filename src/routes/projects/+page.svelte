@@ -18,11 +18,17 @@
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
     ];
 
+    let links = ["https://github.com/andrenguyening/portfolio","https://github.com/andrenguyening/BudgetApp",
+    "https://github.com/andrenguyening/ChatApp",
+    "https://github.com/andrenguyening/portfolio",
+    ];
+
+
     let cards = [
-        { id: 1, cardtitle: 'Portfolio Website', desc: 'Personal website to introduce myself! Check me out!' ,imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg", strings: portfolio},
-        { id: 2, cardtitle: 'Budgify', desc: 'A budget tracking app using a custom RESTful API!',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" ,strings: budget},
-        { id: 3, cardtitle: 'Conversate', desc: 'Chatroom app with live chatting utilizing AJAX polling and updating!',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg", strings:chat },
-        { id: 4, cardtitle: 'Card 4', desc: 'Content for Card 2',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"},
+        { id: 1, cardtitle: 'Portfolio Website', desc: 'Personal website to introduce myself! Check me out!' ,imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg", strings: portfolio, link:links[0]},
+        { id: 2, cardtitle: 'Budgify', desc: 'A budget tracking app using a custom RESTful API!',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" ,strings: budget, link:links[1]},
+        { id: 3, cardtitle: 'Conversate', desc: 'Chatroom app with live chatting utilizing AJAX polling and updating!',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg", strings:chat, link:links[2]},
+        // { id: 4, cardtitle: 'Card 4', desc: 'Content for Card 2',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg", link: links[3]}
         // Add more cards as needed
     ];
 
@@ -34,7 +40,7 @@
     <br><br><br>
     <div class = "card-container" >
         {#each cards as card (card.id)} 
-            <Card cardtitle= {card.cardtitle} desc={card.desc} imagesrc = {card.imagesrc} strings={card.strings}/>
+            <Card cardtitle= {card.cardtitle} desc={card.desc} imagesrc = {card.imagesrc} strings={card.strings} link = {card.link}/>
         {/each}
     </div>
 </div>
