@@ -1,6 +1,7 @@
 <script>
     import Navbar from '../../components/Navbar.svelte';
     import Card from '../../components/Card.svelte';
+    import budgetimg from '../../public/images/budget.jpg';
 
     let portfolio = ["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
@@ -25,9 +26,9 @@
 
 
     let cards = [
-        { id: 1, cardtitle: 'Portfolio Website', desc: 'Personal website to introduce myself! Check me out!' ,imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg", strings: portfolio, link:links[0]},
-        { id: 2, cardtitle: 'Budgify', desc: 'A budget tracking app using a custom RESTful API!',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" ,strings: budget, link:links[1]},
-        { id: 3, cardtitle: 'Conversate', desc: 'Chatroom app with live chatting utilizing AJAX polling and updating!',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg", strings:chat, link:links[2]},
+        { id: 1, cardtitle: 'Portfolio Website', desc: 'Personal website to introduce myself! Check me out!' ,imagesrc:'../../src/public/images/port.jpg', strings: portfolio, link:links[0]},
+        { id: 2, cardtitle: 'Budgify', desc: 'A budget tracking app using a custom RESTful API!',imagesrc:"../../src/public/images/budget.jpg" ,strings: budget, link:links[1]},
+        { id: 3, cardtitle: 'Conversate', desc: 'Chatroom app with live chatting utilizing AJAX polling and updating!',imagesrc:"../../src/public/images/chat.jpg", strings:chat, link:links[2]},
         // { id: 4, cardtitle: 'Card 4', desc: 'Content for Card 2',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg", link: links[3]}
         // Add more cards as needed
     ];
