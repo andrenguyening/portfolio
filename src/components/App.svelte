@@ -18,11 +18,13 @@
             <a href="https://github.com/andrenguyening"><i class="fa-brands fa-github"></i></a>	
 			<a href="mailto:andre.l.nguyen@outlook.com"><i class="fa-solid fa-envelope"></i></a>
 		</div>
+		<!-- <img src = {face} id = 'pp'> -->
 	</div>
-	<img src = {face} id = 'pp'>
+
 </main>
 
 <style>
+
 *{
 	animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
