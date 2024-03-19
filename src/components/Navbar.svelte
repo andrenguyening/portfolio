@@ -1,4 +1,5 @@
 <script>
+  import pdf from "../../src/public/pdf/AndreNguyen_Spring2024.pdf"
 </script>
 
   <head>
@@ -16,7 +17,7 @@
 		  <li><a href="/about"><i class="fa-solid fa-user"></i><span class= "iconlabel">About</span></a></li>
 		  <li><a href="/projects"><i class="fa-solid fa-code"></i><span class= "iconlabel">Projects</span></a></li>
 		  <!-- <li><a href="https://drive.google.com/file/d/1QmQlTtdfx9uxaN1aG5E8cTWa5n13Zf74/view?usp=sharing"><i class="fa-solid fa-file"></i><span class= "iconlabel">Resume</span></a></li> -->
-      <li><a href="../../src/public/pdf/AndreNguyen_Spring2024.pdf"><i class="fa-solid fa-file"></i><span class= "iconlabel">Resume</span></a></li>
+      <li><a href={pdf}><i class="fa-solid fa-file"></i><span class= "iconlabel">Resume</span></a></li>
 
       <!-- <li><a href="/contact">Contact</a></li> -->
 		</ul>

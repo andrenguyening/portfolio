@@ -4,6 +4,7 @@
 
 <script>
 	import Navbar from './Navbar.svelte';
+	import face from '../public/images/image2.jpg'
 </script>
 
 
@@ -18,9 +19,7 @@
 			<a href="mailto:andre.l.nguyen@outlook.com"><i class="fa-solid fa-envelope"></i></a>
 		</div>
 	</div>
-	
-
-
+	<img src = {face} id = 'pp'>
 </main>
 
 <style>
@@ -30,12 +29,14 @@
 }
 
 /*		ids		*/
+
 #pp{
-	transform: translateX(160%);
-    max-width: 550px; 
-    max-height: 550px;
+	transform: translateX(450%) translateY(-185%);
+    max-width: 350px; 
+    max-height: 475px;
 	clip-path: circle();
 }
+
 #period{
 	color:rgb(89, 128, 255);
 }
