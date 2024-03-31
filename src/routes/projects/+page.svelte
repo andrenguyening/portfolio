@@ -43,7 +43,7 @@
         { id: 0, cardtitle: 'Conversate', desc: 'Chat with your friends! Chatroom app with live chatting utilizing AJAX polling and updating!', strings:chat, link:links[0]},
     ];
 
-    let cardimgs = [portimg,budgetimg,chatimg,irisimg]
+    let cardimgs = [chatimg,budgetimg,portimg,irisimg]
 
 
 </script>
