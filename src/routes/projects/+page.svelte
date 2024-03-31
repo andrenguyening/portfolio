@@ -4,8 +4,15 @@
     import budgetimg from '../../public/images/budget.jpg';
     import portimg from '../../public/images/port.jpg';
     import chatimg from '../../public/images/chat.jpg';
+    import irisimg from '../../public/images/iris.jpg'
 
+    let iris = [
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
 
+    ]
     let portfolio = ["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
@@ -22,21 +29,21 @@
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
     ];
 
-    let links = ["https://github.com/andrenguyening/portfolio","https://github.com/andrenguyening/BudgetApp",
-    "https://github.com/andrenguyening/ChatApp",
-    "https://github.com/andrenguyening/portfolio",
+    let links = ["https://github.com/andrenguyening/ChatApp",
+    "https://github.com/andrenguyening/BudgetApp",
+    "https://github.com/andrenguyening/portfolio", 
+    "https://devpost.com/software/iris-an-llm-based-browser-navigation?ref_content=my-projects-tab&ref_feature=my_projects"
     ];
 
 
     let cards = [
-        { id: 0, cardtitle: 'Portfolio Website', desc: 'Personal website to introduce myself! Check me out!', strings: portfolio, link:links[0]},
-        { id: 1, cardtitle: 'Budgify', desc: 'A budget tracking app using a custom RESTful API!' ,strings: budget, link:links[1]},
-        { id: 2, cardtitle: 'Conversate', desc: 'Chatroom app with live chatting utilizing AJAX polling and updating!', strings:chat, link:links[2]},
-        // { id: 4, cardtitle: 'Card 4', desc: 'Content for Card 2',imagesrc:"https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg", link: links[3]}
-        // Add more cards as needed
+        { id: 3, cardtitle: 'Iris: LLM Internet Navigation', desc: 'LLM browser control for people with visual impairments!', strings: iris, link:links[3]},
+        { id: 2, cardtitle: 'Portfolio Website', desc: 'My personal website to introduce myself! Learn and read more about me here!', strings: portfolio, link:links[2]},
+        { id: 1, cardtitle: 'Budgify', desc: 'Track your spending! A budget tracking application using a RESTful API and React!' ,strings: budget, link:links[1]},
+        { id: 0, cardtitle: 'Conversate', desc: 'Chat with your friends! Chatroom app with live chatting utilizing AJAX polling and updating!', strings:chat, link:links[0]},
     ];
 
-    let cardimgs = [portimg,budgetimg,chatimg]
+    let cardimgs = [portimg,budgetimg,chatimg,irisimg]
 
 
 </script>
