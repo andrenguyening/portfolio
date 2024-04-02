@@ -38,23 +38,15 @@
     .card-body{
         background-color: white;
     }
+    .card:hover {
+        transform: translateY(-5px);
+    }
     .card{
+        transition: all 0.3s ease-out;
         display: inline-block;
         margin-left: 30px;
         margin-right: 30px;
         margin-bottom: 30px;
         margin-top: 30px;
-    }
-
-    .hidden{
-        opacity: 0;
-        filter: blur(5px);
-        transform: translateX(-100%);
-        transition: all 1s;
-    }
-    .show{
-        opacity: 1;
-        filter: blur(0);
-        transform: translateX(0);
     }
 </style>
