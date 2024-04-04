@@ -41,6 +41,9 @@
 </main>
 
 <style>
+    *{
+        background-color: white;
+    }
     .bodyimage{
         height: auto; 
         width: auto; 
@@ -80,13 +83,11 @@
         font-size: 3em;
     }
     .container{
-        max-width: fit-content;
         margin-left: auto;
         margin-right: auto;
         padding: 3%;
         position: relative;
         width: 100%;
         max-width: 1000px;
-        height:1000px;
     }
 </style>
